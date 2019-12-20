@@ -1,6 +1,5 @@
 class ChangeCostumeColumns < ActiveRecord::Migration[5.2]
   def change
-    change_table :costumes, 
-    end
+    rename_column :costumes, :imageurl, :image_url
   end
 end
